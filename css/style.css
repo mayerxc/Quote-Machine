@@ -1,0 +1,21 @@
+H1 {
+  font-family: 'Merriweather', serif;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#quoters {
+  text-align: center;
+}
+
+#quoteOut {
+  font-family: 'Old Standard TT', serif;
+  font-size: x-large;
+}
+
+#authorOut {
+  font-size: large;
+  font-weight: bold;
+}
