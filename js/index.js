@@ -6,7 +6,6 @@ $(document).ready(function() {
   var apiError = "There was an error accessing the Random Quote Generator.";
   importQuote();
 
-  //assign functions to both buttons
   $("#getQuote").on("click", function() {
     importQuote();
   });
