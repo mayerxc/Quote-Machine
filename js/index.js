@@ -21,7 +21,6 @@ $(document).ready(function() {
       url: 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?',
       data: {},
       dataType: 'json',
-
       //only gets quote/auther if successful
       success: function(data) {
         //grabs the quote from the quoteText object
@@ -37,7 +36,9 @@ $(document).ready(function() {
         }
       },
       //if not successful getting quote/author from website, writes that there was error
-      error: $("quoteOut").text(apiError),
+      error: function(){
+        $("#quoteOut").text(apiError);
+      }
     })// end of ajax
   } //end of importQuote function
 
