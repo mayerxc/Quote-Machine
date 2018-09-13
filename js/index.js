@@ -18,7 +18,7 @@ $(document).ready(function() {
   //create function to import random quote from quote API
   function importQuote() {
     $.ajax({
-      url: 'http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?',
+      url: 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?',
       data: {},
       dataType: 'json',
 
